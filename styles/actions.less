@@ -1,0 +1,18 @@
+@import "utils";
+
+.actions {
+  .grid-cols(1, -1);
+  .grid-rows(4, 5);
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+
+  button {
+    background-color: transparent;
+    grid-column: span 2;
+
+    .button-style(
+      rgba(245, 175, 55, 1.0),
+      rgba(143, 45, 15, 1.0)
+      );
+  }
+}

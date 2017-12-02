@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {EntityList} from './EntityList'
 import {TextUI} from './TextUI'
+import {Actions} from './Actions'
 
 const entities = [
   {
@@ -28,12 +29,8 @@ export class PlayerUI extends Component {
     return (
       <div className='player-ui'>
         <EntityList entities={entities} />
-
         <TextUI texts={texts} />
-
-        <div className='actions'>
-          <button>Something</button>
-        </div>
+        <Actions />
       </div>
     )
   }

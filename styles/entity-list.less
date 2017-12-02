@@ -8,16 +8,11 @@
   grid-template-columns: 1fr;
 
   .entity {
-    text-align: center;
-    background: transparent;
-    outline: .5px dashed rgba(205, 130, 165, 1.0);
+    background-color: transparent;
 
-    &:focus {
-      outline: .25rem dashed rgba(205, 130, 165, 1.0);
-    }
-
-    &:active {
-      background-color: rgba(223, 0, 0, 0.5);
-    }
+    .button-style(
+      rgba(205, 130, 165, 1.0),
+      rgba(223, 0, 0, 0.5)
+      );
   }
 }

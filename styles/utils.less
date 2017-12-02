@@ -7,3 +7,15 @@
   grid-column-start: @start;
   grid-column-end: @end;
 }
+
+.button-style (@outline, @active) {
+  outline: .5px dashed @outline;
+
+  &:focus {
+    outline: .25rem dashed @outline;
+  }
+
+  &:active {
+    background-color: @active;
+  }
+}
