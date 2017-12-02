@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
-import {PlayerUI} from './components'
+import {PlayerUI} from './containers'
 
 export class App extends Component {
   render () {
     return (
-      <div id='App'>
+      <section id='App'>
         <PlayerUI />
-      </div>
+      </section>
     )
   }
 }

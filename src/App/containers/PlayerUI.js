@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import {EntityList} from './EntityList'
-import {TextUI} from './TextUI'
-import {Actions} from './Actions'
+import {EntityList, TextUI, Actions} from '../components'
 
 const entities = [
   {
