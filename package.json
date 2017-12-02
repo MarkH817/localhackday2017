@@ -1,0 +1,50 @@
+{
+  "name": "localhackday2017",
+  "description": "",
+  "version": "0.0.0",
+  "author": {
+    "name": "Mark Hernandez",
+    "email": "markedcode@gmail.com"
+  },
+  "license": "MIT",
+  "bin": {},
+  "main": "src/index.js",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "report": "nyc report --reporter=lcov",
+    "start": "babel-node src/index",
+    "test": "standard && nyc mocha --require babel-register"
+  },
+  "standard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-hub": "^0.8.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^2.6.1",
+    "jsdoc-to-markdown": "^3.0.2",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3"
+  }
+}

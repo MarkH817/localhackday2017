@@ -1,0 +1,9 @@
+{
+  "generator-lionbyte": {
+    "name": "localhackday2017",
+    "description": "",
+    "version": "0.0.0",
+    "projectType": "generic",
+    "cli": false
+  }
+}
