@@ -19,7 +19,7 @@ createTestCafe('localhost', 5000, 5001)
     const runner = testcafe.createRunner()
 
     let testFiles = [
-      'basic.js'
+      // 'basic.js'
     ]
 
     testFiles = testFiles.map(filename => (

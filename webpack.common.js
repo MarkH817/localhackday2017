@@ -9,7 +9,8 @@ const options = {
       'react',
       'react-dom',
       'react-redux',
-      'redux'
+      'redux',
+      'redux-logger'
     ]
   },
 
