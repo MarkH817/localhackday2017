@@ -1,3 +1,6 @@
+@import "utils";
+@import "entity-list";
+
 #App {
   width: 100%;
 }
@@ -10,15 +13,8 @@
   grid-gap: 1rem;
   grid-template-rows: minmax(6rem, auto);
 
-  .entity-list,
-  .text-ui,
-  .actions {
-    outline: .125rem solid blue;
-  }
-
-  .entity-list {
-    .grid-rows(1, 4);
-    .grid-cols(1, 3);
+  & > * {
+    outline: .125rem solid rgba(123, 15, 201, 0.45);
   }
 
   .text-ui {
@@ -30,14 +26,4 @@
     .grid-cols(1, -1);
     .grid-rows(4, 5);
   }
-}
-
-.grid-rows(@start, @end) {
-  grid-row-start: @start;
-  grid-row-end: @end;
-}
-
-.grid-cols(@start, @end) {
-  grid-column-start: @start;
-  grid-column-end: @end;
 }
