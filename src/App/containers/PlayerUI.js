@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import {EntityList, TextUI, Actions} from '../components'
+import {EntityList, Actions} from '../components'
+import {TextLog} from './TextLog'
 
 const entities = [
   {
@@ -16,18 +17,12 @@ const entities = [
   }
 ]
 
-const texts = [
-  'You have dealt 3 damage.',
-  'E1 has hit you for 1 damage.',
-  'E2 tried to flee. They accidentally fell down a hole instead.'
-]
-
 export class PlayerUI extends Component {
   render () {
     return (
       <div className='player-ui'>
         <EntityList entities={entities} />
-        <TextUI texts={texts} />
+        <TextLog />
         <Actions />
       </div>
     )
