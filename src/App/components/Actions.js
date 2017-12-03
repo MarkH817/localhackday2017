@@ -5,11 +5,11 @@ const deathPrompts = [
   'Bees. Allergies. Allerbees. Hahahaha! Oh wait. They died.',
   'They charged straight into the comfort of the nearest bear\'s arms. The bear swiftly mauled them due to embarrassment and social anxiety.',
   'Sometimes fleeing is worse than death. Oh wait. They tripped. Oh no, they\'re rolling down a hill. Wow! How high were we? Stil rolling, huh? Hmm.... Oh they finished! They died.',
-  'Local fighter runs into the next dimmension. The dimmension of double death.'
+  'Local fighter runs into the next dimension. The dimension of double death.'
 ]
 
 function randomDeath () {
-  let index = Math.round(Math.random() * deathPrompts.length)
+  let index = Math.floor(Math.random() * deathPrompts.length)
   return deathPrompts[index]
 }
 
@@ -22,15 +22,13 @@ export class Actions extends Component {
         {
           title: 'Attack',
           onClick: () => {
-            this.props.onAddText('An attack was made.')
-            this.props.onAddText('However, the fighting system was not implemented.')
+            this.props.onAddText('An attack was made. However, the fighting system was not implemented.')
           }
         },
         {
           title: 'Run Away',
           onClick: () => {
             this.props.onAddText(randomDeath())
-            this.props.onAddText('Surprisingly enought, death still works.')
           }
         }
       ]
