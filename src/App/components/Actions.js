@@ -4,7 +4,7 @@ const deathPrompts = [
   'Someone tried to flee, but they ran into a big hole.',
   'Bees. Allergies. Allerbees. Hahahaha! Oh wait. They died.',
   'They charged straight into the comfort of the nearest bear\'s arms. The bear swiftly mauled them due to embarrassment and social anxiety.',
-  'Sometimes fleeing is worse than death. Oh wait. They tripped. Oh no, they\'re rolling down a hill. Wow! How high were we? Stil rolling, huh? Hmm.... Oh they finished! They died.',
+  'Sometimes fleeing is worse than death. Oh wait. They tripped. Oh no, they\'re rolling down a hill. Wow! How high were we? Still rolling, huh? Hmm.... Oh they finished! They died.',
   'Local fighter runs into the next dimension. The dimension of double death.'
 ]
 
